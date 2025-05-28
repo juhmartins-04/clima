@@ -1,0 +1,115 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #2980b9, #6dd5ed);
+  margin: 0;
+  padding: 2rem;
+  transition: background 0.5s ease;
+}
+
+body.dark-mode {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: auto;
+  background-color: #ffffffcc;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+body.dark-mode .app-container {
+  background-color: #1f2a36cc;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+input, button {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+input {
+  width: 70%;
+}
+
+button {
+  background-color: #0077b6;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #023e8a;
+}
+
+.weather-result, .forecast-result {
+  margin-top: 1.5rem;
+  background-color: #f4f9ff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .weather-result,
+body.dark-mode .forecast-result {
+  background-color: #2e3b4e;
+  color: white;
+}
+
+.weather-icon {
+  font-size: 48px;
+  margin: 0.5rem auto;
+  color: #f39c12;
+  filter: none;
+}
+
+.forecast-day {
+  margin-top: 1rem;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toggle-mode {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 100;
+  transition: background 0.3s;
+}
+
+.toggle-mode:hover {
+  background: #222;
+}
