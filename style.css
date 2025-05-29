@@ -67,11 +67,9 @@ button:hover {
 
 .weather-result, .forecast-result {
   margin-top: 1.5rem;
-  background-color: #f4f9ff;
   padding: 1.5rem;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 body.dark-mode .weather-result,
