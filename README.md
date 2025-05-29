@@ -79,4 +79,4 @@ Editar
 📃 Licença
 Este projeto está licenciado sob a Licença MIT.
 
-Feito com ❤️ por Seu Nome
+Feito por Julia Martins
