@@ -1,82 +1,73 @@
-# 🌤️ Previsão do Tempo - App com OpenWeather API
 
-Este é um aplicativo web simples e responsivo de previsão do tempo que utiliza a API gratuita da OpenWeather (versão 2.5) para exibir o clima atual e a previsão dos próximos 5 dias de qualquer cidade do mundo. A interface é amigável, com modo escuro, ícones animados e transições suaves.
+# 🌤️ Previsão do Tempo – Weather App com OpenWeather API
 
-## 🛠️ Tecnologias utilizadas
+Aplicação web responsiva que exibe o clima atual e a previsão para os próximos 5 dias de qualquer cidade do mundo. Desenvolvido com JavaScript puro (vanilla) e consumo da API pública OpenWeather v2.5.
 
-- HTML5 + CSS3
-- JavaScript (vanilla)
-- Font Awesome e Weather Icons
-- API OpenWeather 2.5 (gratuita)
-- UX Responsivo e acessível
 
-## 🔍 Funcionalidades
+---
 
-- 🌍 Pesquisa por cidade e país
-- ☀️ Exibe:
-  - Temperatura atual
-  - Condição climática
+## 🛠️ Tecnologias Utilizadas
+
+- HTML5 & CSS3
+- JavaScript (Vanilla JS)
+- API OpenWeather (v2.5)
+- Font Awesome & Weather Icons
+
+---
+
+## 💡 Funcionalidades
+
+- 🔍 Busca por cidade (ex: "São Paulo", "Paris, FR")
+- ☀️ Exibe o clima atual:
+  - Temperatura (°C)
   - Umidade
   - Velocidade do vento
   - Pressão atmosférica
-- 📆 Previsão para os próximos 5 dias (mín. e máx.)
-- 🌓 Modo escuro
-- 🎨 Ícones visuais para cada tipo de clima
-- ✨ Animações suaves na interface
+  - Condição climática (ícones visuais)
+- 📆 Previsão dos próximos 5 dias (mínima e máxima)
+- 🌓 Modo escuro (dark mode)
+- ✨ Transições suaves e interface responsiva
 
-## 🚀 Como usar
+---
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/weather-app.git
-Navegue até a pasta:
+## 📦 Como Usar
 
-bash
-Copiar
-Editar
-cd weather-app
-Abra o arquivo index.html no seu navegador.
+```bash
+git clone https://github.com/juhmartins-04/clima.git
+cd clima
+# Abra o arquivo index.html no navegador
+```
 
-📌 Importante: Você precisará de uma chave gratuita da API da OpenWeather. Obtenha a sua aqui: https://openweathermap.org/appid
+> 🔑 **Importante:**  
+> É necessário gerar uma chave gratuita da [OpenWeather](https://openweathermap.org/appid).  
+> Substitua a variável `apiKey` no arquivo `script.js`:
 
-Substitua a chave no arquivo script.js:
-
-javascript
-Copiar
-Editar
+```js
 const apiKey = "SUA_CHAVE_AQUI";
-💡 Recursos da API gratuita usados
-/weather → clima atual
+```
 
-/forecast → previsão para 5 dias (a cada 3 horas)
+---
 
-Localização por cidade e país
+## 🌐 Deploy
 
-Unidade de temperatura: Celsius
+[🔗 Acesse o projeto online via GitHub Pages](https://juhmartins-04.github.io/clima/)
 
-Linguagem: Português
+---
 
-🎨 Design & UX
-Interface centrada e acessível
+## 📁 Estrutura
 
-Layout mobile-first
-
-Ícones estilizados com Weather Icons
-
-Transições e animações suaves
-
-Cores adaptadas para modo claro e escuro
-
-📁 Estrutura de Arquivos
-pgsql
-Copiar
-Editar
-📦 weather-app
+```
+📦 clima
  ┣ 📄 index.html
  ┣ 📄 style.css
  ┣ 📄 script.js
  ┗ 📄 README.md
-📃 Licença
-Este projeto está licenciado sob a Licença MIT.
+```
 
-Feito por Julia Martins
+---
+
+## 📄 Licença
+
+Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
+
+Desenvolvido com 💻 por [Julia Martins](https://github.com/juhmartins-04).
